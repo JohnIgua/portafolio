@@ -1,0 +1,205 @@
+*{
+    background-color: #020403;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    font-size: 18px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 50px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 25px;
+}
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.inicio{
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+}
+.inicio h3{
+    color: #adadad;
+    font-weight: semibold;
+    font-size: 25px;
+    margin: auto;
+}
+.inicio h2{
+    font-weight: semibold;
+    font-size: 50px;
+    margin: auto;
+}
+.inicio ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 10px;
+}
+.about-me{
+    text-align: center;
+}
+.about-me h2{
+    color: #ffffff;
+    font-weight: semibold;
+    font-size: 45px;
+    margin: 0px;
+}
+.about-me p{
+    color: #adadad;
+    padding: 0px 50px;
+}
+.habilities{
+    text-align: center;
+    padding-top: 50px 0px;
+    width: 100%;
+}
+.habilities .contain-cards{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.habilities h2{
+    color: #ffffff;
+    font-weight: semibold;
+    font-size: 45px;
+}
+.habilities .card{
+    align-content: center;
+    display: grid;
+    place-items: center;
+    width: 200px;
+}
+.habilities .card .cont-img{
+    border-style: solid;
+    border-color: chocolate;
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+}
+.habilities .contain-cards .card h3{
+    color: #ffffff;
+    font-size: 12px;
+}
+.experence{
+    text-align: center;
+    padding: 0 15%;
+}
+.experence h2{
+    color: #ffffff;
+    font-weight: semibold;
+    font-size: 45px;
+}
+.experence .container-exp .singular-exp h3{
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0px;
+}
+.experence .container-exp .singular-exp .description{
+    text-align: left;
+}
+.experence .container-exp .singular-exp .organization-text{   
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+}
+.experence .container-exp .singular-exp p{
+    color: #adadad;
+    font-size: 18px;
+}
+hr{
+    margin: 0px;
+}
+.experence .container-exp .singular-exp .different{
+    color: #adadad;
+}
+.portfolio h2{
+    color: #ffffff;
+    font-weight: semibold;
+    font-size: 45px;
+    text-align: center;
+}
+.portfolio .content-portfolio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.portfolio .content-portfolio .imagen-portfolio{
+    padding: 20px;
+}
+.contact h2{
+    color: #ffffff;
+    font-weight: semibold;
+    font-size: 45px;
+    text-align: center;
+}
+.contact{
+    text-align: center;
+    padding-top: 50px 0px;
+    width: 100%;
+}
+.contact .contain-cards{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.contact .contain-cards .card h3{
+    color: #adadad;
+    font-size: 12px;
+}
+.contact .card .cont-img{
+    border-style: solid;
+    border-color: #adadad;
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+}
+.contact .card{
+    align-content: center;
+    display: grid;
+    place-items: center;
+    width: 150px;
+}
+.nav-label, .nav-input{
+    display: 1;
+}
+@media (max-width: 913px) {
+    nav ul li{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background: #adadad;
+        width: 40%;
+        right: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+    .nav-input:checked + nav ul li{
+        clip-path: circle(100% at center);
+    }
+}
+@media (min-width: 913px) {
+    .nav-label, .nav-input{
+        display: none;
+    }
+}
+
+
