@@ -174,32 +174,25 @@ hr{
     place-items: center;
     width: 150px;
 }
-.nav-label, .nav-input{
-    display: 1;
-}
+
 @media (max-width: 913px) {
-    nav ul li{
-        position: fixed;
-        top: 80px;
-        bottom: 0;
-        background: #adadad;
-        width: 40%;
-        right: 0;
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-items: center;
-        clip-path: circle(0 at center);
-        transition: clip-path 1s ease-in-out;
-    }
-    .nav-input:checked + nav ul li{
-        clip-path: circle(100% at center);
-    }
-}
-@media (min-width: 913px) {
-    .nav-label, .nav-input{
+    .lista{
         display: none;
     }
+    .show{
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        position: fixed;
+        background-color: #adadad;
+        width: 80%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 913px) {
+    
+    
 }
 
 

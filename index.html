@@ -9,14 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div>
-        <nav>
-            <label for="menu" class="nav-label">
-                <img src="assets/img/menu.svg" class="nav-img">
-            </label>
-            <input type="checkbox" id="menu" class="nav-input">
-            <ul>
+        <nav id="navigation" class="menu-nav">
+            <button id="btnMenu">Menu</button>
+            <ul class="lista">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Acerca de mi</a></li>
                 <li><a href="#">Mis habilidades</a></li>
@@ -24,8 +22,16 @@
                 <li><a href="#">Portafolio</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
-        </nav>        
+        </nav>           
     </div>
+    <script>
+        let hamburgerButton = document.getElementById("btnMenu");
+        let navigation = document.getElementById("navigation");
+
+hamburgerButton.addEventListener("click", function () {
+  navigation.classList.toggle("show");
+});
+    </script>
     <section class="inicio">
 
             <div>
